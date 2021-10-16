@@ -147,7 +147,7 @@ public class ProjectModel {
 			PreparedStatement preparedStmt = con.prepareStatement(query);
 			
 			// binding values
-			preparedStmt.setString(1, title);
+			preparedStmt.setString(1, ptitle);
 			preparedStmt.setString(2, pdesc);
 			preparedStmt.setString(3, iname);
 			preparedStmt.setString(4, dtime);
