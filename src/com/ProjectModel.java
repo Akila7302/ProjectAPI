@@ -99,12 +99,14 @@ public class ProjectModel {
 				String p_description = rs.getString("p_description");
 				String inventor_name = rs.getString("inventor_name");
 				String delivery_time = rs.getString("delivery_time");
-				
+				String project_cost = Double.toString(rs.getDouble("project_cost"));
+								
 				// Add into the html table
 				output += "<tr><td>" + project_title + "</td>";
 				output += "<td>" + p_description + "</td>";
 				output += "<td>" + inventor_name + "</td>";
 				output += "<td>" + delivery_time + "</td>";
+				output += "<td>" + project_cost + "</td>";
 				
 				// buttons
 				output += "<td><input name='btnUpdate' type='button' value='Update' "
