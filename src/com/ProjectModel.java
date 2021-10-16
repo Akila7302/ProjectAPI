@@ -200,7 +200,8 @@ public class ProjectModel {
 			newprojects + "\"}";
 		}
 		catch (Exception e) {
-			
+			output = "{\"status\":\"error\", \"data\": \"Error while deleting the project.\"}";
+			System.err.println(e.getMessage());
 		}
 			return output;
 		}
