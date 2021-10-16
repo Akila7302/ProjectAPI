@@ -184,7 +184,7 @@ public class ProjectModel {
 			}
 			
 			// create a prepared statement
-			String query = "delete from projects where projectid=?";
+			String query = "delete from projects where project_id=?";
 			
 			PreparedStatement preparedStmt = con.prepareStatement(query);
 			
