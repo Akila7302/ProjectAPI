@@ -43,6 +43,7 @@ public class ProjectsAPI extends HttpServlet {
 				request.getParameter("p_description"),
 				request.getParameter("inventor_name"),
 				request.getParameter("delivery_time"),
+				request.getParameter("project_cost"));
 				
 		
 		response.getWriter().write(output);
@@ -57,6 +58,7 @@ public class ProjectsAPI extends HttpServlet {
 		paras.get("p_description").toString(),
 		paras.get("inventor_name").toString(),
 		paras.get("delivery_time").toString(),
+		paras.get("project_cost").toString());
 		response.getWriter().write(output);
 	}
 
